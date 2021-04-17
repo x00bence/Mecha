@@ -33,10 +33,10 @@ int main(int argc, char* argv[])
   GetCurrentDirectoryA(MAX_PATH, curr_dir);
   GetFullPathNameA("mecha_payload.dll", MAX_PATH, dll_path, NULL);
 
-  LPCSTR detourPath[1] = { dll_path };
+  LPCSTR detour_path[1] = { dll_path };
 
   // Create a process that will load our DLL first.
-  if (!DetourCreateProcessWithDllsA(NULL, command_line, NULL, NULL, FALSE, DEBUG_ONLY_THIS_PROCESS, NULL, curr_dir, &si, &pi, 1, detourPath, NULL)) {
+  if (!DetourCreateProcessWithDllsA(NULL, command_line, NULL, NULL, FALSE, DEBUG_ONLY_THIS_PROCESS, NULL, curr_dir, &si, &pi, 1, detour_path, NULL)) {
     MessageBoxA(NULL, "Mecha has failed to launch the hooked client.", "Error", NULL);
 
     return -1;
