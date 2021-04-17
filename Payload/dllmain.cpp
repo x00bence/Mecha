@@ -151,7 +151,6 @@ int CEF_EXPORT hk_cef_browser_host_create_browser(
   const struct _cef_browser_settings_t* settings,
   struct _cef_request_context_t* request_context)
 {
-
   // We need access to the request handler to inject our plugins.
   original_request_handler = client->get_request_handler;
   client->get_request_handler = hk_get_request_handler;
@@ -186,7 +185,6 @@ int CEF_EXPORT hk_cef_initialize(
 
 void WINAPI hk_thread()
 {
-
   // 1. Restore the import table.
   DetourRestoreAfterWith();
 

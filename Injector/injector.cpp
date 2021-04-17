@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 
   // Get the directories. (We are inside the LoL folder)
   GetCurrentDirectoryA(MAX_PATH, curr_dir);
-  GetFullPathNameA("mecha_payload.dll", MAX_PATH, dll_path, nullptr);
+  GetFullPathNameA("mecha_payload.dll", MAX_PATH, dll_path, NULL);
 
   LPCSTR detourPath[1] = { dll_path };
 

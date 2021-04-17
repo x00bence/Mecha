@@ -70,7 +70,7 @@ Using <b>Mecha</b> is simple. Clicking around in the GUI should answer all of yo
 
   <h3 id="plugins">JavaScript Plugins</h3>
 
-As noted in above sections, you also have the possibility to develop JavaScript "plugins" that will get executed in the scope of the client. This allows you to directly modify resources, hook and override internal JavaScript, dump data, and more. <b>Mecha</b> tries to be unopinionated and provides no default API by default for creating plugins. It's up to the developers to create an API, design the lifecycle flow, and decide the bundling process.
+As noted in above sections, you also have the possibility to develop JavaScript "plugins" that will get executed in the scope of the client. This allows you to directly modify resources, hook and override internal JavaScript, dump data, and more. <b>Mecha</b> tries to be unopinionated and provides no API by default for creating plugins. It's up to the developers to reverse engineer the client, create an API, design the lifecycle flow, and decide the bundling process.
 
   <br>
 
@@ -81,11 +81,13 @@ Plugins can be installed simply by dragging and dropping them into your chosen "
 </div>
 
 <div id="roadmap">
-  <h1>Roadmap</h1>
+  <h1>Roadmap in order of priority</h1>
 
   <ul>
     <li>⚙️ Add support for plugin initialization ordering, exclusions, and more opt-in settings</li>
     <li>🔊 Add error logging, improve fault tolerance</li>
+    <li>🔍 Support for resource replacing</li>
+    <li>🚀 Minimalist API/Example plugins</li>
     <li>✨ Prettier GUI</li>
   <ul>
 

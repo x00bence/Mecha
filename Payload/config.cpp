@@ -1,13 +1,13 @@
 #include "pch.h"
 #include "config.h"
 
-// Libs
-#include <nlohmann/json.hpp>
-
 // std
 #include <string>
 #include <filesystem>
 #include <fstream>
+
+// Libs
+#include <nlohmann/json.hpp>
 
 namespace fs = std::filesystem;
 
@@ -31,7 +31,7 @@ namespace mecha {
 
     std::ifstream stream(dir);
 
-    nlohmann::json ret = nlohmann::json::parse(stream, nullptr, false);
+    nlohmann::json ret = nlohmann::json::parse(stream, NULL, false);
 
     if (ret.is_discarded()) {
       return empty;
