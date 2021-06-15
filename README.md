@@ -8,8 +8,15 @@
 
 <br>
 
-<div>
-
+<div id="announcement">
+  <h1>End of the Line</h1>
+  
+<b>I announce this with a heavy heart, but as of 2021.06.16, further development of Mecha has been put on an indefinite hold due to security concerns and Riot Games introducing new measures specifically against Mecha and client modifications.</b> 
+  
+ I never intended for <b>Mecha</b> to get this big, and while this situation sucks all in all for both me and <b>Mecha</b> users, Riot Games is taking the right direction and is merely protecting their playerbase. <b>Mecha</b> had too much power at hand, and many people were using it to abuse other exploits. This conclusion was not completely unexpected by me, and I do support Riot Games' choice moving forward. I will leave this repository up in an archived state. 
+  
+ A huge thank you to everybody for using <b>Mecha</b>, and my sincere apologies if my tool has caused any issues.
+</div>
 <div id="usage">
 
   <h1>Usage</h1>
